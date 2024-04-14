@@ -1,0 +1,42 @@
+.container-input{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input {
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    transition: border, color 0.2s ease-in-out;
+    background: transparent;
+
+    :-webkit-autofill {
+      -webkit-text-fill-color: #fff;
+      box-shadow: 0 0 0px 1000px #222b36 inset;
+
+      :focus {
+        box-shadow: 0 0 0px 1000px #266798 inset;
+      }
+    }
+
+    ::placeholder {
+      color: #ccc;
+    }
+
+    :hover {
+      border: 1px solid #ccc;
+    }
+
+    :focus {
+      outline: 0;
+      border: 1px solid #ccc;
+      background: #266798;
+    }
+  }
+
+  .error{
+    color: red;
+    font-size: 12px;
+  }

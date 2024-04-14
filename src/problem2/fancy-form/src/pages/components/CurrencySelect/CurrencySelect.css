@@ -1,0 +1,8 @@
+.wrap-option{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.label{
+    font-size: 12px;
+}
