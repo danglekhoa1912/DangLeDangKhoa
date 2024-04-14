@@ -3,5 +3,5 @@
 - Using the index as a key should be avoided because if elements are added or removed, the index will change, leading to updates of elements that have not changed their content.
 - The useMemo in sortedBalances includes prices as a dependency, which is redundant because it is not used in the logic. This may cause the function to recompute unnecessarily whenever prices change.
 - lhs used in the sortedBalances filtering function is not defined.
-- Some types in WalletBalance such as Priority and blockchain are not defined.
+- Some types in WalletBalance such as blockchain are not defined.
 - The getPriority function should define a type for its parameter instead of using any.
